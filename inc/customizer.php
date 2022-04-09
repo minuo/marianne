@@ -1293,11 +1293,13 @@ if ( ! function_exists( 'marianne_options_default' ) ) {
 			'marianne_loop_author_name_prefix' => false,
 			'marianne_loop_author_avatar'      => false,
 			'marianne_loop_post_time'          => false,
+			'marianne_loop_post_featured_image'=> false,
 			'marianne_loop_content'            => 'excerpt',
 			'marianne_loop_comment_link_text'  => '',
 
 			// Post Settings.
 			'marianne_post_post_time'          => false,
+			'marianne_post_featured_image'     => false,
 			'marianne_post_author_position'    => 'none',
 			'marianne_post_author_info'        => 'name',
 			'marianne_post_author_avatar'      => true,
