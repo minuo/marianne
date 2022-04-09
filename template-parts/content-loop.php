@@ -47,14 +47,20 @@
 		</h3>
 
 		<?php
-		$marianne_thumbnail_class = 'entry-thumbnail loop-thumbnail';
-
-		if ( true === marianne_get_theme_mod( 'marianne_global_images_expand' ) ) {
-			$marianne_thumbnail_class .= ' entry-thumbnail-wide';
+		
+		if ( true === marianne_get_theme_mod( 'marianne_loop_post_featured_image' ) ) {
+			
+			$marianne_thumbnail_class = 'entry-thumbnail loop-thumbnail';
+			
+			if ( true === marianne_get_theme_mod( 'marianne_global_images_expand' ) ) {
+				$marianne_thumbnail_class .= ' entry-thumbnail-wide';
+			}
+			
+			marianne_the_post_thumbnail( $marianne_thumbnail_class, array( 'link' ) );
 		}
 
-		marianne_the_post_thumbnail( $marianne_thumbnail_class, array( 'link' ) );
 		?>
+		
 	</header>
 
 	<?php
